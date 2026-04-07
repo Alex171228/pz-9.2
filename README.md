@@ -1,5 +1,5 @@
 # Практическое задание 9
-## Шишков А.Д. ЭФМО-02-22
+## Шишков А.Д. ЭФМО-02-25
 ## Тема
 Внедрение распределённого кэша (Redis).
 
@@ -273,6 +273,7 @@ curl http://localhost:8082/v1/tasks/{id}
 
 <img width="1903" height="379" alt="image" src="https://github.com/user-attachments/assets/3eb24e6b-6c89-4ba2-82c4-eb666dabf352" /> 
 
+Для проверки можно использовать postman коллекцию 
 ---
 
 ## 9. Демонстрация
