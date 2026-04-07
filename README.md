@@ -230,7 +230,10 @@ curl http://localhost:8082/v1/tasks/{id}
 curl http://localhost:8082/v1/tasks/{id}
 ```
 
-![Cache miss и hit](docs/images/pz9_miss_hit.png)
+<img width="1897" height="90" alt="image" src="https://github.com/user-attachments/assets/acf68f41-05d4-4904-b7b8-a3dbab1e9e3b" /> 
+
+<img width="1864" height="33" alt="image" src="https://github.com/user-attachments/assets/45df523a-f5c4-47cd-b104-602e05ee68cc" /> 
+
 
 ### Сценарий 2: инвалидация после PATCH
 
@@ -243,7 +246,9 @@ curl -X PATCH http://localhost:8082/v1/tasks/{id} \
 curl http://localhost:8082/v1/tasks/{id}
 ```
 
-![Инвалидация после PATCH](docs/images/pz9_invalidate.png)
+<img width="1891" height="61" alt="image" src="https://github.com/user-attachments/assets/e1701484-5649-4a4c-8ba9-867c3e29ee6d" /> 
+
+<img width="1889" height="93" alt="image" src="https://github.com/user-attachments/assets/c69a2f64-907b-476e-8cba-a51f3d8568e3" /> 
 
 ### Сценарий 3: инвалидация после DELETE
 
@@ -253,6 +258,9 @@ curl -X DELETE http://localhost:8082/v1/tasks/{id}
 # GET вернёт 404
 curl http://localhost:8082/v1/tasks/{id}
 ```
+<img width="1901" height="112" alt="image" src="https://github.com/user-attachments/assets/764fe499-2a88-4b14-8f56-a7f160d652ac" /> 
+
+<img width="1894" height="171" alt="image" src="https://github.com/user-attachments/assets/eebbd0aa-747b-4463-abf4-2a730618449b" /> 
 
 ### Сценарий 4: fallback при остановленном Redis
 
@@ -263,12 +271,16 @@ docker compose stop redis
 curl http://localhost:8082/v1/tasks/{id}
 ```
 
-![Fallback без Redis](docs/images/pz9_fallback.png)
+<img width="1903" height="379" alt="image" src="https://github.com/user-attachments/assets/3eb24e6b-6c89-4ba2-82c4-eb666dabf352" /> 
 
 ---
 
 ## 9. Демонстрация
 
-**Прогон Postman-коллекции:**
+**Запуск Postman-коллекции:**
 
-![Postman результаты](docs/images/pz9_postman.png)
+<img width="1398" height="638" alt="image" src="https://github.com/user-attachments/assets/ebac6637-b371-47fc-afce-3e2959b5822f" /> 
+
+<img width="1398" height="640" alt="image" src="https://github.com/user-attachments/assets/4b11ed05-f214-4b24-aa4e-3528f3ae3713" /> 
+
+<img width="1398" height="158" alt="image" src="https://github.com/user-attachments/assets/a1afee58-ece3-4573-8a50-f1de76c4b8aa" /> 
